@@ -1,6 +1,6 @@
 # Significant Performance Decline During the Download and Storage of Small Images in Python 3.12
 
-Refer to `performance-check-result.ipynb` for comprehensive performance measurements.
+Refer to [`performance-check-result.md`](performance-check-result.md) for comprehensive performance measurements.
 
 ## Summary
 
@@ -16,7 +16,7 @@ Python 3.11:
     cpu_percents mean: 1.7448979591836733
 ```
 
-> No Significant Difference
+> Python 3.11 uses more CPU.
 
 ### Threadpool
 
@@ -45,3 +45,17 @@ Python 3.11:
 ```
 
 > Python 3.12 is **1.51** times *slower* and uses **26.18** times more CPU.
+
+### Threadpool (on Windows Sandbox)
+
+```
+Python 3.12:
+    elapsed time: 77.19274369999994
+    cpu_percents mean: 441.97548746518106
+
+Python 3.11:
+    elapsed time: 72.3070917
+    cpu_percents mean: 3.6785511363636365
+```
+
+> Python 3.12 is **1.07** times *slower* and uses **120.15** times more CPU.
