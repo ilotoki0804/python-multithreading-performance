@@ -53,7 +53,7 @@ def threading_thread() -> None:
 
 
 def monitor(target) -> tuple[list[float], list[float], list[int], float]:
-    # The code is from https://stackoverflow.com/a/2468983/21997874, with some modifies.
+    # The code is from https://stackoverflow.com/a/49212252/21997874, with some modifies.
     worker_process = mp.Process(target=target)
     worker_process.start()
     p = psutil.Process(worker_process.pid)
