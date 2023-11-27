@@ -1,5 +1,7 @@
 # Significant Performance Decline During the Download and Storage of Small Images in Python 3.12
 
+Refer to `performance-check-result.ipynb` for comprehensive performance measurements.
+
 ## Summary
 
 ### Control Group
