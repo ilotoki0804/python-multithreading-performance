@@ -1,4 +1,4 @@
-# Significant Performance Decline During the Download and Storage of Small Images in Python 3.12
+# python-multithreading-performance
 
 Refer to [`performance-check-result.md`](performance-check-result.md) for comprehensive performance measurements.
 
